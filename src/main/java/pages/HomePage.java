@@ -22,14 +22,20 @@ public class HomePage {
          return new DropdownPage(driver);
     }
 
-    private void clickLink(String linkText) {
-        driver.findElement(By.linkText(linkText)).click();
-
-    }
 
     public ForgotPasswordPage clickForgotPassword() {
         clickLink("Forgot Password");
         return new ForgotPasswordPage(driver);
+    }
+
+    public HoversPage clickHovers() {
+        clickLink("Hovers");
+        return new HoversPage(driver);
+    }
+
+    private void clickLink(String linkText) {
+        driver.findElement(By.linkText(linkText)).click();
+
     }
 
 }
