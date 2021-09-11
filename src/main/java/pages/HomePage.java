@@ -13,7 +13,8 @@ public class HomePage {
     }
 
     public LoginPage clickFormAuthentication() {
-        clickLink("Form Authentication"); driver.findElement(formAuthenticationLink).click();
+        clickLink("Form Authentication");
+        driver.findElement(formAuthenticationLink).click();
         return new LoginPage(driver);
     }
 
@@ -45,7 +46,6 @@ public class HomePage {
 
     private void clickLink(String linkText) {
         driver.findElement(By.linkText(linkText)).click();
-
     }
 }
 
