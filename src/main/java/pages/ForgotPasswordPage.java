@@ -22,5 +22,3 @@ public class ForgotPasswordPage {
         return new VerifiedPage(driver);
     }
 }
-
-

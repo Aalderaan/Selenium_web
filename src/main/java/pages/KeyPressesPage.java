@@ -25,6 +25,4 @@ public class KeyPressesPage {
     public void enterPi() {
         enterText(Keys.chord(Keys.ALT,  "p") + " = 3.14");
     }
-
-
 }

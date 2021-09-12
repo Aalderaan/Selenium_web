@@ -15,5 +15,4 @@ public class VerifiedPage {
     public String getVerfiedStatusText() {
        return driver.findElement(verifiedStatus).getText();
     }
-
 }

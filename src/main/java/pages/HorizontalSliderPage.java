@@ -6,9 +6,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class HorizontalSliderPage {
-    private final WebDriver driver;
-    private final By horizontalSlider = By.cssSelector("input[type=range]");
-    private final By result = By.xpath("//*[@id=\"range\"]");
+    private WebDriver driver;
+    private By horizontalSlider = By.cssSelector("input[type=range]");
+    private By result = By.id("range");
 
 
 

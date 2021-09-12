@@ -14,7 +14,6 @@ public class ForgotPasswordTests extends BaseTests {
         forgotPasswordPage.setEmail(ForgotPasswordPage.EMAIL);
         VerifiedPage verifiedPage = forgotPasswordPage.retrievePassword();
         Assert.assertTrue(verifiedPage.getVerfiedStatusText().contains("Internal Server Error"));
-
     }
 }
 

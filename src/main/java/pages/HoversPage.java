@@ -50,6 +50,4 @@ public class HoversPage {
              return caption.findElement(link).getAttribute("href");
          }
      }
-
-
 }

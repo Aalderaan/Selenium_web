@@ -37,9 +37,6 @@ public class BaseTests {
         System.out.println(boxlinks.size());
 
         System.out.println(driver.getTitle());*/
-
-
-
     }
 
     @AfterClass
