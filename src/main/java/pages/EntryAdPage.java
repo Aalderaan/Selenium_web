@@ -24,5 +24,4 @@ public class EntryAdPage {
     public String getModalTitle() {
       return driver.switchTo().activeElement().getText();
     }
-
 }
