@@ -5,8 +5,8 @@ import org.openqa.selenium.WebDriver;
 
 public class HomePage {
 
-    private WebDriver driver;
-    private By formAuthenticationLink = By.linkText("Form Authentication");
+    private final WebDriver driver;
+    private final By formAuthenticationLink = By.linkText("Form Authentication");
 
     public HomePage(WebDriver driver) {
         this.driver = driver;
@@ -69,7 +69,24 @@ public class HomePage {
         return new FramePage(driver);
     }
 
+    public DynamicLoadingPage clickDynamicLoading() {
+        clickLink("Dynamic Loading");
+        return new DynamicLoadingPage(driver);
+    }
+
+    public LargeAndDeepDomPage clickLargeAndDeepDom(){
+        clickLink("Large & Deep DOM");
+        return new LargeAndDeepDomPage(driver);
+    }
+
+    public InfiniteScrollPage clickInfiniteScroll(){
+        clickLink("Infinite Scroll");
+        return new InfiniteScrollPage(driver);
+    }
+
+
     private void clickLink(String linkText) {
+
         driver.findElement(By.linkText(linkText)).click();
     }
 }
