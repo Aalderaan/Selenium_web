@@ -7,7 +7,7 @@ public class EntryAdPage {
 
     WebDriver driver;
     private By closeButton = By.cssSelector("#modal > div.modal > div.modal-footer > p");
-    private By modalTitleText = By.cssSelector("#modal > div.modal > div.modal-title > h3");
+    //private By modalTitleText = By.cssSelector("#modal > div.modal > div.modal-title > h3");
 
     public EntryAdPage(WebDriver driver) {
         this.driver = driver;

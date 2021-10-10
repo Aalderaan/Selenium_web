@@ -3,9 +3,10 @@ package frames;
 import base.BaseTests;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import pages.NestedFrame;
 import pages.WysiwygEditorPage;
 
-public class frameTests extends BaseTests {
+public class FrameTests extends BaseTests {
 
     @Test
     public void testWysiwyg() {
@@ -20,5 +21,14 @@ public class frameTests extends BaseTests {
         wysiwygEditorPage.setTextArea(textB);
 
         Assert.assertEquals(wysiwygEditorPage.getTextFromEditor(), textA + textB, "Text frame incorrect");
+    }
+
+    @Test
+    public void testNestedFrame() {
+        String textLeftFrame = "LEFT";
+        String textBottomFrame = "BOTTOM";
+        NestedFrame nestedFrame = homePage.clickFrames().clickNestedFrame();
+        Assert.assertEquals(nestedFrame.getBottomFrameText(), textBottomFrame, "Incorrect frame clicked");
+        Assert.assertEquals(nestedFrame.getLeftFrameText(), textLeftFrame, "Incorrect frame clicked");
     }
 }
