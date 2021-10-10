@@ -15,6 +15,7 @@ public class WaitTests extends BaseTests {
         loadingPage.clickStart();
         Assert.assertEquals(loadingPage.getLoadedText(), "Hello World!",
                 "Loaded text incorrect");
+
     }
 
     @Test
