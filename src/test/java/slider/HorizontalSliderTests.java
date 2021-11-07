@@ -10,15 +10,9 @@ public class HorizontalSliderTests extends BaseTests {
     private final int NUMBER = 4;
 
     @Test
-    public void testHorizontalSlider() {
-        HorizontalSliderPage horizontalSliderPage = homePage.clickHorizontalSlider();
-        horizontalSliderPage.slide(NUMBER);
-    }
-
-    @Test
     public void testValue() {
         HorizontalSliderPage horizontalSliderPage = homePage.clickHorizontalSlider();
         horizontalSliderPage.slide(NUMBER);
-        Assert.assertEquals(horizontalSliderPage.getValue(), "4");
+        Assert.assertEquals(horizontalSliderPage.getValue(), NUMBER);
     }
 }

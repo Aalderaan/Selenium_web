@@ -17,9 +17,10 @@ public class HorizontalSliderPage {
     }
 
     public void slide(double number) {
-        double check = 0;
+        double step = 0.5;
+        double check = 0.0;
         while(check < number) {
-            check += 0.5;
+            check += step;
             driver.findElement(horizontalSlider).sendKeys(Keys.ARROW_RIGHT);
         }
     }

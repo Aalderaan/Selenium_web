@@ -16,8 +16,7 @@ public class AlertsPage {
         this.driver = driver;
     }
 
-    public void triggerAlert() {
-        driver.findElement(triggerAlertButton).click();
+    public void triggerAlert() { driver.findElement(triggerAlertButton).click();
     }
 
     public void triggerConfirm() {
