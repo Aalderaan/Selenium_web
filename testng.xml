@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test name="/Users/dalinet/IdeaProjects/SeleniumDemo/testng">
+        <packages>
+            <package name="alerts"/>
+            <package name="dropdown"/>
+            <package name="forgotpassword"/>
+            <package name="frames"/>
+            <package name="hover"/>
+            <package name="javascript"/>
+            <package name="keys"/>
+            <package name="login"/>
+            <package name="navigation"/>
+            <package name="slider"/>
+            <package name="wait"/>
+        </packages>
+
+       <!-- <classes>
+            <class name="Googletest.GmailTest"/>
+            <class name="Googletest.MapsTest"/>
+            <class name="Googletest.ImagesTest"/>
+        </classes> &ndash;&gt;-->
+    </test> <!-- Test -->
+</suite> <!-- Suite -->
