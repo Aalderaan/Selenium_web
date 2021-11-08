@@ -16,7 +16,7 @@ public class HorizontalSliderPage {
         this.driver = driver;
     }
 
-    public void slide(double number) {
+    public void slide(int number) {
         double step = 0.5;
         double check = 0.0;
         while(check < number) {
