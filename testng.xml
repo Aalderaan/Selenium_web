@@ -16,10 +16,10 @@
             <package name="wait"/>
         </packages>
 
-       <!-- <classes>
-            <class name="Googletest.GmailTest"/>
-            <class name="Googletest.MapsTest"/>
-            <class name="Googletest.ImagesTest"/>
-        </classes> &ndash;&gt;-->
+        <!-- <classes>
+             <class name="Googletest.GmailTest"/>
+             <class name="Googletest.MapsTest"/>
+             <class name="Googletest.ImagesTest"/>
+         </classes> &ndash;&gt;-->
     </test> <!-- Test -->
 </suite> <!-- Suite -->
