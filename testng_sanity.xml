@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="One Suite">
+    <test name="/Users/dalinet/IdeaProjects/SeleniumDemo/testngpack">
+        <packages>
+            <package name="dropdown"/>
+            <package name="alerts"/>
+            <package name="forgotpassword"/>
+            <package name="login"/>
+        </packages>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->

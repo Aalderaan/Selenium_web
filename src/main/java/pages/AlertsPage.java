@@ -27,7 +27,7 @@ public class AlertsPage {
         driver.findElement(triggerPromptButton).click();
     }
 
-    public void alert_clickToAccept() {
+    public void alertСlickToAccept() {
         driver.switchTo().alert().accept();
     }
 

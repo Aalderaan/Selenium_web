@@ -12,7 +12,7 @@ public class AlertTests extends BaseTests {
 
         AlertsPage alertsPage = homePage.clickJavaScriptAlerts();
         alertsPage.triggerAlert();
-        alertsPage.alert_clickToAccept();
+        alertsPage.alertСlickToAccept();
         Assert.assertEquals(alertsPage.getResult(), "You successfully clicked an alert", "Results text incorrect");
     }
 
@@ -32,7 +32,7 @@ public class AlertTests extends BaseTests {
 
         String text = "check this what I have typed here";
         alertsPage.alert_setInput(text);
-        alertsPage.alert_clickToAccept();
+        alertsPage.alertСlickToAccept();
         Assert.assertEquals(alertsPage.getResult(), "You entered: " + text, "Results text incorrect");
     }
 }
